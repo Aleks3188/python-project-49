@@ -1,7 +1,8 @@
-#!/usr/bin/env python3
+#!/home/admin_ar/hexlet-git/python-project-49/.venv/bin/python
+from brain_games.cli import welcome_user
 
 def main():
-    print (f'"Welcome to the Brain Games"')
+    None
 
 if __name__ == '__main__':
     main()

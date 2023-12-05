@@ -14,8 +14,6 @@ prompt = "^0.4.1"
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 
-[tool.poetry.group.dev.dependencies]
-prompt = "^0.4.1"
 
 [build-system]
 requires = ["poetry-core"]
