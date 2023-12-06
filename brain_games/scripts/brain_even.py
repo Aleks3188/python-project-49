@@ -8,9 +8,9 @@ def welcome_user():
     name_gamer = prompt.string('May I have your name? ')
     print(f"Hello, {name_gamer}")
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    correct_answer = 0 
+    correct_answer = 0
     for index in range(3):
-        number_random = randint(1, 10) 
+        number_random = randint(1, 10)
         print(f'Question: {number_random}')
         geymer__answer = prompt.string('Your answer: ')
         if number_random % 2 == 0:
@@ -29,10 +29,9 @@ Let's try again, {name_gamer}
 Let's try again, {name_gamer}
             ''')
                 break
-        else: 
-            print(f'''{geymer__answer} is wrong answer ;(. Correct answer was 'no'.
-Let's try again, {name_gamer}
-            ''') 
+        else:
+            print(f"{geymer__answer} is wrong answer ;(. Correct answer was 'no'.")
+            print(f"Let's try again, {name_gamer}")
             break
         correct_answer += 1
     if correct_answer == 3:
