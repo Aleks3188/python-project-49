@@ -9,30 +9,27 @@ def welcome_user():
     print(f"Hello, {name_gamer}")
     print('Answer "yes" if the number is even, otherwise answer "no".')
     correct_answer = 0
-    for index in range(3):
-        number_random = randint(1, 10)
+    # Answers yes or no because lenght_string > 80
+    yes_answer = "is wrong answer ;(. Correct answer was 'yes'."
+    no_answer = "is wrong answer ;(. Correct answer was 'no'."
+    for _ in range(3):
+        number_random = randint(1, 20)
         print(f'Question: {number_random}')
         geymer__answer = prompt.string('Your answer: ')
         if number_random % 2 == 0:
             if geymer__answer == 'yes':
                 print('Correct!')
-            elif geymer__answer == 'no':
-                print(f''''no' is wrong answer ;(. Correct answer was 'yes'.
-Let's try again, {name_gamer}
-            ''')
-                break
-        elif number_random % 2 != 0:
-            if geymer__answer == 'no':
-                print('Correct!')
-            elif geymer__answer == 'yes':
-                print(f''''yes' is wrong answer ;(. Correct answer was 'no'.
-Let's try again, {name_gamer}
-            ''')
+            else:
+                print(f"'{geymer__answer}' {yes_answer}")
+                print(f"Let's try again, {name_gamer}")
                 break
         else:
-            print(f"{geymer__answer} is wrong answer ;(. Correct answer was 'no'.")
-            print(f"Let's try again, {name_gamer}")
-            break
+            if geymer__answer == 'no':
+                print('Correct!')
+            else:
+                print(f"'{geymer__answer}' {no_answer}")
+                print(f"Let's try again, {name_gamer}")
+                break
         correct_answer += 1
     if correct_answer == 3:
         print(f'Congratulations, {name_gamer}')
