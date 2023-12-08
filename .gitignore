@@ -1,10 +1,8 @@
 *.egg-info
-__pycache__
+__pycache__/
 dist/
 *.pyc
 .venv/
 .coverage
 coverage.xml
-.pytest_cache/
-python-project-49/brain_games/__pycache__/__init__.cpython-310.pyc
-/home/admin_ar/hexlet-git/python-project-49/brain_games/scripts/__pycache__/__init__.cpython-310.pyc
+*.pytest_cache/

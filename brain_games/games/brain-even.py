@@ -1,9 +1,7 @@
-#!/home/admin_ar/hexlet-git/python-project-49/.venv/bin/python
-from random import randint
-import prompt
+import random
 
 
-def brain_even():
+def generation_ques_and_answer():
     print("Welcome to the Brain Games!")
     name_gamer = prompt.string('May I have your name? ')
     print(f"Hello, {name_gamer}")
@@ -33,11 +31,3 @@ def brain_even():
         correct_answer += 1
     if correct_answer == 3:
         print(f'Congratulations, {name_gamer}')
-
-
-def main():
-    brain_even()
-
-
-if __name__ == '__main__':
-    main()

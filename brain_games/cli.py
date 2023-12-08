@@ -6,3 +6,4 @@ def welcome_user():
     print("Welcome to the Brain Games!")
     name_gamer = prompt.string('May I have your name? ')
     print(f"Hello, {name_gamer}")
+    return name_gamer
