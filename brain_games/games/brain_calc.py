@@ -12,6 +12,6 @@ def gener_ques_and_answer():
     get_operator = choice(operators_symbol)
     gener_answer = f'{one_number} {get_operator} {two_number}'
     #gener_number = 5
-    return gener_answer, gener_number
+    return gener_answer, #gener_number
 
 #gener_ques_and_answer()
