@@ -1,11 +1,8 @@
 import random
 
+DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 def generation_ques_and_answer():
-    print("Welcome to the Brain Games!")
-    name_gamer = prompt.string('May I have your name? ')
-    print(f"Hello, {name_gamer}")
-    print('Answer "yes" if the number is even, otherwise answer "no".')
     correct_answer = 0
     # Answers yes or no because lenght_string > 80
     yes_answer = "is wrong answer ;(. Correct answer was 'yes'."
