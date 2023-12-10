@@ -11,7 +11,10 @@ def gener_ques_and_answer():
     operators_symbol = ('+', '-', '*')
     get_operator = choice(operators_symbol)
     gener_answer = f'{one_number} {get_operator} {two_number}'
-    #gener_number = 5
-    return gener_answer, #gener_number
-
-#gener_ques_and_answer()
+    if get_operator == '+':
+        gener_number = one_number + two_number
+    elif get_operator == '-':
+        gener_number = one_number - two_number
+    elif get_operator == '*':
+        gener_number = one_number * two_number
+    return gener_answer, gener_number
